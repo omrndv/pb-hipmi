@@ -1105,6 +1105,10 @@
 }
 
 @media (max-width: 960px) {
+  .layout-select-main {
+    padding: calc(60px + env(safe-area-inset-top, 0px)) 16px calc(32px + env(safe-area-inset-bottom, 0px));
+  }
+
   .layout-cards-grid {
     grid-template-columns: 1fr;
     max-width: 440px;
@@ -1112,7 +1116,11 @@
   }
 
   .layout-select-title {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  .layout-select-subtitle {
+    font-size: 13px;
   }
 
   .layout-select-footer {
