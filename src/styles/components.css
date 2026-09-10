@@ -17,6 +17,62 @@
   pointer-events: auto;
 }
 
+@media (max-width: 768px) {
+  .booth-header {
+    height: 52px;
+    padding: 0 16px;
+    top: env(safe-area-inset-top, 0px);
+  }
+
+  .welcome-header {
+    justify-content: flex-end;
+  }
+
+  .welcome-header .welcome-brand-badge {
+    display: none !important;
+  }
+
+  .brand-badge {
+    gap: 8px;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .brand-logo-mini {
+    height: 28px;
+  }
+
+  .brand-org {
+    font-size: 11px;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-event-name {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .icon-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .icon-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  #btn-fullscreen {
+    display: none !important;
+  }
+}
+
 .brand-badge {
   display: flex;
   align-items: center;

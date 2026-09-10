@@ -479,18 +479,19 @@ class PhotoboothApp {
               </div>
             </div>
 
-            <div style="width: 100%; max-width: 420px; background: #14161B; border: 1px solid #242730; border-radius: 16px; padding: 28px 24px; margin-bottom: 28px; box-shadow: 0 16px 40px rgba(0,0,0,0.4); flex-shrink: 0;">
-            <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(200,168,75,0.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: var(--color-accent);">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                <polyline points="21 15 16 10 5 21"></polyline>
-              </svg>
+            <div class="mobile-viewer-info-card">
+              <div class="mobile-viewer-info-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <h3 style="font-size: 17px; font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">Event Station Photobooth</h3>
+              <p style="font-size: 13px; color: #9E9EA7; line-height: 1.5; margin: 0;">
+                Foto beresolusi tinggi kamu diproses di layar monitor booth. Silakan unduh langsung dari layar booth atau hubungi operator.
+              </p>
             </div>
-            <h3 style="font-size: 17px; font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">Event Station Photobooth</h3>
-            <p style="font-size: 14px; color: #9E9EA7; line-height: 1.5; margin: 0;">
-              Foto beresolusi tinggi kamu diproses di layar monitor booth. Silakan unduh langsung dari layar booth atau hubungi operator.
-            </p>
           </div>
         </div>
       `;
@@ -672,6 +673,7 @@ class PhotoboothApp {
 window.addEventListener('DOMContentLoaded', () => {
   const app = new PhotoboothApp();
   app.init();
+  app.sessionManager = sessionManager;
   window.__HIPMI_APP__ = app; // Expose for testing & automation
   window.__runStressTest = runPhotoboothStressTest;
 });

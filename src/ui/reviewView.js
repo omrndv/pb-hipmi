@@ -31,7 +31,7 @@ export class ReviewView {
             <div class="review-card-badge">SHOT ${numDisplay}</div>
           </div>
           <div class="review-card-footer">
-            <span style="font-size: 13px; font-weight: 700; color: #111111;">Photo ${idx + 1}</span>
+            <span class="review-card-label">Photo ${idx + 1}</span>
             <button class="review-retake-btn" data-slot="${p.index}" aria-label="Retake Photo ${idx + 1}">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M23 4v6h-6"></path>

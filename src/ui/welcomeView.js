@@ -24,8 +24,8 @@ export class WelcomeView {
 
     div.innerHTML = `
       <!-- Top Header Controls -->
-      <header class="booth-header">
-        <div class="brand-badge">
+      <header class="booth-header welcome-header">
+        <div class="brand-badge welcome-brand-badge">
           <img src="${this.eventConfig.logoHipmi}" alt="HIPMI" class="brand-logo-mini" />
           <div class="brand-text-mini">
             <span class="brand-org">${orgName}</span>
